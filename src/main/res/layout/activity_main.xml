@@ -1,0 +1,75 @@
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="end">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:background="#3aa9e6"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="QQ侧滑菜单"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/hcw"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="泰迪牛"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/but1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="胡邦茂A"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/but2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="胡邦茂B"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/but3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="胡邦茂C"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f7f7"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="QQ主界面"
+            android:textSize="31sp"/>
+    </LinearLayout>
+</android.support.v4.widget.SlidingPaneLayout>
