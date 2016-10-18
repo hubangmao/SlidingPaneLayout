@@ -19,6 +19,7 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Facebook图片加载框架初始化
         Fresco.initialize(this);
         initTranslucentStatusBar();
     }

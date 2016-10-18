@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.drawee.view.SimpleDraweeView;
+
 /**
  * Author hbm
  * IDE Android Studio
@@ -20,6 +22,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private SlidingPaneLayout mSlidingPane;
     private LinearLayout mMenu, mMain;
     private Toast mToast;
+    private SimpleDraweeView mSimpleDraweeView;
 
     @Override
 
@@ -43,7 +46,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             @Override
             public void onPanelSlide(View view, float slideOffset) {
                 //view 代表主视图
-                mMenu.setScaleY(slideOffset / 2 + 0.5f);//slideOffset默认=0.0，值随拖动的距离变化,停止拖动值=1.0
+                //slideOffset默认=0.0，值随拖动的距离变化,停止拖动值=1.0
+                mMenu.setScaleY(slideOffset / 2 + 0.5f);
                 mMenu.setScaleX(slideOffset / 2 + 0.5f);
                 mMain.setScaleY(1 - slideOffset / 9);
             }
@@ -66,6 +70,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mSlidingPane = (SlidingPaneLayout) findViewById(R.id.sliding);
         mMenu = (LinearLayout) findViewById(R.id.menu);
         mMain = (LinearLayout) findViewById(R.id.main);
+        mSimpleDraweeView = (SimpleDraweeView) findViewById(R.id.simple);
 
         findViewById(R.id.but1).setOnClickListener(this);
         findViewById(R.id.but2).setOnClickListener(this);

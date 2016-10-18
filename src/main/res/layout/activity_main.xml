@@ -1,5 +1,6 @@
 <android.support.v4.widget.SlidingPaneLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:id="@+id/sliding"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,17 +22,24 @@
             android:text="QQ侧滑菜单"
             android:textSize="30sp"/>
 
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/faceBock_ImageLoad2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@mipmap/hcw"/>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            fresco:placeholderImage="@drawable/lama03"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="#fcfcfc"
+            fresco:roundingBorderWidth="2dp"/>
 
-        <Button
+        <TextView
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="泰迪牛"
+            android:gravity="center"
+            android:text="No Timer"
             android:textSize="20sp"/>
 
         <Button
@@ -62,7 +70,25 @@
         android:layout_height="match_parent"
         android:background="#f5f7f7"
         android:orientation="vertical"
-        android:paddingTop="25dp">
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7dc5f9"
+            android:paddingTop="25dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/simple"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                fresco:placeholderImage="@mipmap/hcw"
+
+                fresco:roundAsCircle="true"
+                fresco:roundingBorderColor="#62a1f5"
+                fresco:roundingBorderWidth="2dp"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
